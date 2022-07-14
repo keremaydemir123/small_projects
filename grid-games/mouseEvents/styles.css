@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 20px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #888;
+  gap: 10px;
+}
+
+.grid-container {
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  box-sizing: border-box;
+  width: 400px;
+  height: 400px;
+}
+
+.cell {
+  border: 1px solid #777;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease-in-out;
+}
+
+.cell-container {
+  display: flex;
+  gap: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  width: 300px;
+  height: max-content;
+  text-align: center;
+  padding: 6px;
+  gap: 4px;
+  border-radius: 0.4rem;
+}
+
+.select {
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 1rem;
+  background-color: #999;
+}
+
+strong {
+  font-size: 1rem;
+}
+
+.row-select {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+.column-select {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+
+.submit-input {
+  width: 100%;
+  font-size: 1rem;
+  background-color: rgb(220, 50, 50);
+}
+
+.smallCell {
+  transition: 0.4s ease-in-out;
+}

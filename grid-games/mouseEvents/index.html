@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mouse Events</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Choose a mouse event</h3>
+      <select class="select">
+        <option value="click">click</option>
+        <option value="dblclick">dblclick</option>
+        <option value="mouseover">mouseover</option>
+        <option value="mousedown">mousedown</option>
+        <option value="mouseup">mouseup</option>
+        <option value="mouseleave">mouseleave</option>
+        <option value="mouseenter">mouseenter</option>
+        <option value="mouseout">mouseout</option>
+      </select>
+      <hr />
+      <strong>select a row size:</strong>
+      <span>
+        <select class="row-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="6">6</option>
+          <option value="9">9</option>
+        </select>
+      </span>
+      <strong>select a column size:</strong>
+      <span>
+        <select class="column-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="6">6</option>
+          <option value="9">9</option>
+        </select>
+      </span>
+      <input
+        type="submit"
+        name="submit"
+        value="generate grid"
+        class="submit-input"
+      />
+      <hr />
+      <p>
+        Event triggered
+        <strong
+          class="event-trigger-count"
+          style="font-size: 30px; color: blue"
+        >
+          0</strong
+        >
+        times
+      </p>
+      <p>There is EMPTY div inside cell</p>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
