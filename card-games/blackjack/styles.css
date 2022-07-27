@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: max-content;
+}
+
+button {
+  width: 100%;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+
+#start-game {
+  height: 30px;
+  background-color: rgba(50, 50, 180, 0.3);
+  border: 1px solid blue;
+  cursor: pointer;
+}
+
+.cards-container {
+  height: 200px;
+  width: 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  top: 500px;
+  padding: 8px;
+  border: 1px solid darkslategrey;
+  gap: 8px;
+}
+.card-div {
+  height: 100%;
+  text-align: 0;
+}
+
+.card-img {
+  height: 100%;
+}
+
+.wrapper {
+  font-size: large;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: #f4f4f4;
+  padding: 8px;
+  text-align: center;
+  height: 200px;
+  gap: 4px;
+}
+
+#bid {
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+#info {
+  position: absolute;
+  top: 15%;
+  transform: translateY(-50%);
+  left: 20%;
+  color: red;
+  font-size: 40px;
+}
+
+.dealer-cards-container {
+  height: 200px;
+  width: 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  padding: 8px;
+  border: 1px solid darkslategrey;
+  gap: 8px;
+}
+
+#container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: 100%;
+  padding: 8px;
+  gap: 20px;
+  transition: 1s all ease-in-out;
+}
+
+.try-again {
+  width: 200px;
+  height: 50px;
+  color: red;
+  font-size: large;
+}

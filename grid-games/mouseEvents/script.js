@@ -65,3 +65,4 @@ function gridMaker(rows, columns, sWidth, sHeight, event, triggerCount) {
   //console
   console.dir();
 }
+

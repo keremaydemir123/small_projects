@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>CV Maker</legend>
+
+      <form action="results.html" method="get">
+        <div class="fullname">
+          <label for="name">Full name:</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="email">
+          <label for="email">email:</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="bio">
+          <label class="bio" for="bio">bio/summary:</label>
+          <textarea name="bio" id="bio"></textarea>
+        </div>
+
+        <div class="skill">
+          <label for="skillName">Skill:</label>
+          <input type="text" name="skillName" id="skillName" />
+          <br />
+          <label for="skillValue">Skill Value</label>
+          <input type="number" name="skillValue" id="skillValue" />
+          <progress id="skill" name="skill" value="50" max="100">50%</progress>
+        </div>
+
+        <div class="highSchool">
+          <label for="highSchool">High School Name:</label>
+          <input type="text" name="highSchool" id="highSchool" />
+          <br />
+          <label for="highSchoolGradYear">High School Graduation Year</label>
+          <input
+            type="number"
+            name="highSchoolGradYear"
+            id="highSchoolGradYear"
+          />
+        </div>
+        <div class="languages">
+          <label for="language">languages:</label>
+          <input list="languages" name="languages" id="language" />
+          <datalist id="languages">
+            <option value="english">english</option>
+            <option value="turkish">turkish</option>
+            <option value="german">german</option>
+            <option value="spanish">spanish</option>
+          </datalist>
+          <br />
+        </div>
+
+        <div class="profilePic">
+          <label for="profilePic">Upload profile picture</label>
+          <input type="file" />
+        </div>
+
+        <input type="submit" />
+      </form>
+    </fieldset>
+  </body>
+</html>

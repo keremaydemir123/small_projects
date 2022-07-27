@@ -1,0 +1,12 @@
+label {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+  background-color: aliceblue;
+  margin-right: 10px;
+}
+
+.bio {
+  height: 100%;
+}
+
