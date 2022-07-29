@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <h1>to-do list</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-do</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <div class="menu-line">
+      <label for="filter-tag">Select a tag to filter:</label>
+      <select id="filter-tag">
+        <option value="all" selected>all</option>
+      </select>
+      <input type="button" value="Filter" id="filter-button">
+    </div>
+
+    <div class="menu-line">
+      <label for="create-tag">Create a tag</label>
+      <input type="text" id="create-tag" placeholder="e.g. shop" maxlength="10">
+      <input type="button" value="Create tag" id="create-tag-button">
+    </div>
+
+    <div class="menu-line">
+      <label for="delete-tag">Delete a tag</label>
+      <select id="delete-tag">
+      </select>
+      <input type="button" value="Delete tag" id="delete-tag-button">
+    </div>
+
+  </nav>
+
+  <div id="container">
+
+    <h1>Todo</h1>
+
+    <div class="content">
+      <div id="create-todo">
+        <input id="text-input" type="text" placeholder="What to do?" maxlength="55">
+        <input type="date" name="date" id="date-input">
+        <select id="tag-selector">
+          <option id="selected" value="tagless">no tag</option>
+        </select>
+        <input type="color" name="color-input" id="color-input" value="#ffffff">
+        <input type="button" value="Add" id="add">
+      </div>
+      <div id="todos-container"></div>
+    </div>
+
+    <h3><strong>Created By <a class="name" href="https://linktr.ee/keremaydemir">Kerem Aydemir</a> </strong> - <a
+        href="https://www.freepik.com/vectors/hand-drawn-background">Hand
+        drawn background
+        vector created by
+        pikisuperstar - www.freepik.com</a></h3>
+
+  </div>
+  <img src="bg.jpg" alt="bg" class="bg-image">
+</body>
+
 </html>
