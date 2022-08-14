@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Library Game</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+<html lang="en">
 
-<div class="shelf-container">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-
-      <div class="shelf1">
-
-      </div>
-
-    <div class="shelf2">
+<body>
+    <div class="discard discard-left"></div>
+    <div class="container">
+        <div class="header">
+            <h2>Library game</h2>
+            <p>Put same colored books to seperate shelves to win.</p>
+        </div>
+        <div class="range-wrap">
+            <label for="shelf-quan-range">Select shelf quantity:</label>
+            <input type="range" name="shelf-quan-range" class="range" id="shelf-quan-range" value="3" min="2" max="7">
+            <output class="bubble"></output>
+        </div>
+        <div class="range-wrap">
+            <label for="shelf-size-range">Select shelf size:</label>
+            <input type="range" name="shelf-size-range" class="range" id="shelf-size-range" value="3" min="3" max="7">
+            <output class="bubble"></output>
+        </div>
+        <div class="range-wrap">
+            <label for="color-quan-range">Select diverse color quantity:</label>
+            <input type="range" name="color-quan-range" class="range" id="color-quan-range" value="3" min="2" max="5">
+            <output class="bubble"></output>
+        </div>
+        <button id="start" class="start"> START GAME</button>
     </div>
+    <div class="discard discard-right"></div>
+</body>
 
-    </div>
-     <script src="script.js" charset="utf-8"> </script>
-
-  </body>
 </html>
