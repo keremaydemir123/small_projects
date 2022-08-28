@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./login.js" type="module" defer></script>
+
+  <title>Login</title>
+</head>
+
+<body>
+
+  <template>
+    <div class="signin-success">
+      <div>Redirecting to Main Page</div>
+      <div class="loader"></div>
+    </div>
+  </template>
+
+
+  <div class="container">
+    <form id="form">
+      <div class="form-header">
+        <h2>Login Form</h2>
+      </div>
+      <div class="form-control">
+        <label for="username">Username: </label>
+
+        <div class="input-wrapper">
+          <div class="input-field">
+            <input type="text" name="username" id="username" placeholder="username">
+          </div>
+          <div class="alert">
+            <span class="material-icons hidden check_circle">
+              check_circle
+            </span>
+            <span class="material-icons hidden error">
+              error
+            </span>
+          </div>
+        </div>
+        <small class="hidden">error</small>
+      </div>
+      <div class="form-control">
+        <label for="password">Password: </label>
+
+        <div class="input-wrapper">
+          <div class="input-field">
+            <input type="password" name="password" id="password" placeholder="password">
+            <span class="material-icons hidden visibility_on">
+              visibility
+            </span>
+            <span class="material-icons visible visibility_off">
+              visibility_off
+            </span>
+          </div>
+          <div class="alert">
+            <span class="material-icons hidden check_circle">
+              check_circle
+            </span>
+            <span class="material-icons hidden error">
+              error
+            </span>
+          </div>
+        </div>
+        <small class="hidden">error</small>
+      </div>
+      <div class="remember-me"><input type="checkbox" name="rememeber-me" id="remember-me"> <label
+          for="remember-me">Remember me</label>
+      </div>
+      <input type="submit" value="Signin" id="form-submit">
+      <p class="footer">You don't have an account? <a href="./index.html">Signin</a></p>
+    </form>
+  </div>
+</body>
+
+</html>

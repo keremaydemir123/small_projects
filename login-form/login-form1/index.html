@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./signin.js" type="module" defer></script>
+    <title>Sign in</title>
+</head>
+
+<body>
+
+    <template>
+        <div class="signin-success">
+            <div>Redirecting to Login Page</div>
+            <div class="loader"></div>
+        </div>
+    </template>
+
+    <div class="container">
+        <form id="form">
+            <div class="form-header">
+                <h2>Signin Form</h2>
+            </div>
+            <div class="form-control">
+                <label for="username">Username: </label>
+
+                <div class="input-wrapper">
+                    <div class="input-field">
+                        <input type="text" name="username" id="username" placeholder="username">
+                    </div>
+                    <div class="alert">
+                        <span class="material-icons hidden check_circle">
+                            check_circle
+                        </span>
+                        <span class="material-icons hidden error">
+                            error
+                        </span>
+                        <span class="material-icons visible info">
+                            info
+                        </span>
+                        <div class="username-info tooltip">
+                            <p> username:</p>
+                            <p> length must be between 3-16,</p>
+                            <p> characters must be alphanumerical</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="hidden">error</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email: </label>
+                <div class="input-wrapper">
+                    <div class="input-field">
+                        <input type="email" name="email" id="email" placeholder="exxxxxx@metu.edu.tr">
+                    </div>
+                    <div class="alert">
+                        <span class="material-icons hidden check_circle">
+                            check_circle
+                        </span>
+                        <span class="material-icons hidden error">
+                            error
+                        </span>
+                        <span class="material-icons visible info">
+                            info
+                        </span>
+                        <div class="email-info tooltip">
+                            <p> email:</p>
+                            <p> it must start with an exxxxxx where x are numbers</p>
+                            <p> it must end with @metu.edu.tr</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="hidden">error</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password:</label>
+                <div class="input-wrapper">
+                    <div class="input-field">
+                        <input type="password" name="password" id="password" placeholder="password">
+                        <span class="material-icons hidden visibility_on">
+                            visibility
+                        </span>
+                        <span class="material-icons visible visibility_off">
+                            visibility_off
+                        </span>
+                    </div>
+                    <div class="alert">
+                        <span class="material-icons hidden check_circle">
+                            check_circle
+                        </span>
+                        <span class="material-icons hidden error">
+                            error
+                        </span>
+                        <span class="material-icons visible info">
+                            info
+                        </span>
+                        <div class="email-info tooltip">asdasdasdasdasda</div>
+                    </div>
+                </div>
+                <small class="hidden">error</small>
+            </div>
+            <div class="form-control">
+                <label for="password-confirm">Confirm your password: </label>
+
+                <div class="input-wrapper">
+                    <div class="input-field">
+                        <input type="password" name="password-confirm" id="password-confirm"
+                            placeholder="confirm your password">
+                        <span class="material-icons hidden visibility_on">
+                            visibility
+                        </span>
+                        <span class="material-icons visible visibility_off">
+                            visibility_off
+                        </span>
+                    </div>
+                    <div class="alert">
+                        <span class="material-icons hidden check_circle">
+                            check_circle
+                        </span>
+                        <span class="material-icons hidden error">
+                            error
+                        </span>
+                        <span class="material-icons visible info">
+                            info
+                        </span>
+                        <div class="email-info tooltip">asdasdasdasdasda</div>
+                    </div>
+                </div>
+                <small class="hidden">Password does not match</small>
+            </div>
+            <input type="submit" value="Signin" id="form-submit">
+            <p class="footer">You already have an account? <a href="./login.html">Login</a></p>
+        </form>
+    </div>
+
+</body>
+
+</html>

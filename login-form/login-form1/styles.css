@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: skyblue;
+  font-family: "Open Sans", sans-serif;
+}
+
+input {
+  padding: 4px;
+  border: none;
+  outline: none;
+  text-align: start;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  width: 80%;
+  background-color: aquamarine;
+  border: 0;
+  border-radius: 10px;
+  margin: 20px;
+  transition: all 0.1s ease-in-out;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+input[type="submit"]:hover {
+  scale: 1.05;
+}
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+a:hover {
+  text-decoration: underline;
+}
+label {
+  font-size: 16px;
+}
+#form {
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  max-height: max-content;
+  width: 500px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.form-header {
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  justify-self: center;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.form-control {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 400px;
+  max-width: 400px;
+}
+.form-control > label {
+  align-self: flex-start;
+  font-size: 14px;
+}
+.form-control > small {
+  color: red;
+  align-self: flex-start;
+}
+
+.icon-question-sign {
+  color: #ccc;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.alert {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: max-content;
+}
+
+.input-field {
+  padding: 2px 8px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  background-color: #f7f7f7;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 1px 0px;
+}
+.success-border {
+  border: 2px solid green;
+}
+.error-border {
+  border: 2px solid red;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inline;
+}
+.material-icons {
+  cursor: pointer;
+}
+.info {
+  color: #aaa;
+  position: relative;
+}
+
+.visibility_off {
+  color: #aaa;
+}
+.visibility_on {
+  color: #999;
+}
+.remember-me {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#remember-me {
+  width: max-content;
+}
+.remember-me > label {
+  font-size: 15px;
+}
+.tooltip {
+  font-size: small;
+  visibility: hidden;
+  width: max-content;
+  background-color: rgba(80, 10, 200, 0.8);
+  color: #fff;
+  border-radius: 6px;
+  padding: 5px 5px;
+  width: max-content;
+  height: max-content;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 105%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.info:hover + .email-info {
+  visibility: visible;
+  opacity: 1;
+}
+.info:hover + .username-info {
+  visibility: visible;
+  opacity: 1;
+}
+
+.error {
+  color: red;
+}
+.check_circle {
+  color: green;
+}
+
+.footer {
+  margin-bottom: 20px;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #3498db;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.signin-success {
+  color: darkblue;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: skyblue;
+  width: max-content;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
